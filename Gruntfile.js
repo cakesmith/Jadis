@@ -8,7 +8,7 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
 
     grunt.initConfig({
-        watch: {
+        watch       : {
             nodeModule: {
                 files: ['app/**/*.js'],
                 tasks: ['newer:jshint:all', 'jasmine_node']
@@ -18,12 +18,12 @@ module.exports = function (grunt) {
                 tasks: ['newer:jshint:test', 'jasmine_node']
             }
         },
-        jshint: {
+        jshint      : {
             options: {
                 jshintrc: 'app/.jshintrc',
                 reporter: require('jshint-stylish')
             },
-            all: [
+            all : [
                 'Gruntfile.js',
                 'app/**/*.js',
                 '!app/**/node_modules/**/*.js'
@@ -37,19 +37,19 @@ module.exports = function (grunt) {
         },
         jasmine_node: { // jshint ignore:line
             options: {
-                forceExit: true,
-                match: '.',
-                matchall: false,
+                forceExit : true,
+                match     : '.',
+                matchall  : false,
                 extensions: 'js',
                 specNameMatcher: 'spec',
-                jUnit: {
-                    report: true,
-                    savePath: "./build/reports/jasmine/",
+                jUnit     : {
+                    report     : true,
+                    savePath   : "./build/reports/jasmine/",
                     useDotNotation: true,
                     consolidate: true
                 }
             },
-            all: ['app/']
+            all    : ['app/']
         }
     });
     grunt.registerTask('default', [
