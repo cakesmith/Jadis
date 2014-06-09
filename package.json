@@ -1,0 +1,25 @@
+{
+    "name": "jadis",
+    "description": "jadis",
+    "main": "app/jadis",
+    "version": "0.1.0",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "private": true,
+    "keywords": [],
+    "devDependencies": {
+        "load-grunt-tasks": "~0.3.0",
+        "time-grunt": "~0.2.8",
+        "grunt-newer": "~0.6.1",
+        "grunt-contrib-watch": "~0.5.3",
+        "grunt-contrib-jshint": "~0.8.0",
+        "jshint-stylish": "~0.1.5",
+        "grunt-jasmine-node": "^0.2.1",
+        "jasmine-node": "^2.0.0"
+    },
+    "dependencies": {
+        "rewire": "^2.0.0"
+    }
+}
